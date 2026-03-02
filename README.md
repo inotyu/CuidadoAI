@@ -1,101 +1,90 @@
-<<<<<<< HEAD
-# CuidadoAI 🧓
+# 🧓 CuidadoAI - Plataforma de Cuidados para Idosos
 
-**Cuidado Inteligente Para Toda Vida**
+Plataforma moderna de cuidados para idosos com inteligência artificial, ajudando famílias e cuidadores a proporcionar o melhor acompanhamento para a terceira idade.
 
-CuidadoAI é uma plataforma completa de cuidados para idosos com IA personalizada. Combinando tecnologia avançada com conhecimento geriátrico especializado, o CuidadoAI ajuda famílias e cuidadores a entender e atender às necessidades de saúde e bem-estar dos idosos.
+## 📋 Sumário
 
-## O Problema Que Estamos Resolvendo
+- [Visão Geral](#-visão-geral)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias](#-tecnologias)
+- [Instalação](#-instalação)
+- [Configuração](#-configuração)
+- [Estrutura](#-estrutura)
+- [Contribuição](#-contribuição)
 
-Mais de 60% das famílias carecem de conhecimento suficiente sobre cuidados geriátricos, nutrição adequada para idosos e reconhecimento de sinais de alerta de saúde. Esta lacuna leva a cuidados inadequados, emergências evitáveis e deterioração da qualidade de vida. Muitos idosos não recebem o acompanhamento necessário, refletindo a dificuldade das famílias em reconhecer necessidades específicas da terceira idade.
+## 🎯 Visão Geral
 
-CuidadoAI aborda esta lacuna crítica oferecendo avaliações personalizadas de saúde, planos de cuidados individualizados e comunicação inteligente, capacitando famílias a tomar decisões informadas e melhorar a qualidade de vida dos idosos.
+CuidadoAI é uma plataforma completa que oferece:
 
-## Principais Funcionalidades
+- **Acompanhamento de Saúde**: Monitoramento inteligente da saúde dos idosos
+- **Avaliações Geriátricas**: Questionários especializados para identificar necessidades
+- **Planos de Cuidados**: Recomendações personalizadas baseadas no perfil de saúde
+- **Assistente IA**: Companheiro virtual especializado em cuidados geriátricos
 
-- **Companheiro IA Especializado**: Converse com um assistente IA especializado em geriatria que compreende as necessidades específicas
-- **Avaliação Inteligente de Saúde**: Complete questionários detalhados para gerar perfis de saúde personalizados
-- **Planos Nutricionais Personalizados**: Receba planos alimentares semanais adaptados às condições de saúde específicas
-- **Avaliações de Bem-Estar**: Participe de cenários interativos para aprender sobre cuidados geriátricos
-- **Insights Baseados em Condições**: Receba dicas e orientações baseadas nas condições de saúde específicas
+## ✨ Funcionalidades
 
-## Tech Stack
+- 🏥 **Avaliação de Saúde**: Questionários detalhados para detectar condições crônicas
+- 🍎 **Planos Nutricionais**: Dieta personalizada para necessidades específicas da terceira idade
+- 💊 **Controle de Medicamentos**: Histórico e lembretes de tratamentos
+- � **Análise de Bem-Estar**: Avaliação de humor e qualidade de vida
+- 🤖 **Assistente IA Especializado**: Chatbot treinado em geriatria
+- 📋 **Gestão de Perfis**: Múltiplos perfis de idosos por cuidador
+
+## 🛠 Tecnologias
 
 - **Frontend**: React 18, TypeScript, Vite
-- **Styling**: Tailwind CSS, Framer Motion
+- **Estilos**: Tailwind CSS, Framer Motion
 - **Backend**: Supabase (PostgreSQL, Auth, Storage)
-- **AI Services**: OpenAI GPT, Google Gemini
-- **Icons**: Lucide React
+- **IA**: OpenAI GPT, Google Gemini
+- **Ícones**: Lucide React
 
-## Como Começar
-
-### Pré-requisitos
-
-- Node.js (v18 ou superior)
-- npm ou yarn
-- Conta Supabase
-- Chave API OpenAI
-- Chave API Google Gemini
-
-### Instalação
-
-1. **Clone o repositório**
-   ```bash
-   git clone <repository-url>
-   cd cuidadoai
-   ```
-
-2. **Instale as dependências**
-   ```bash
-   npm install
-   ```
-
-3. **Configure as variáveis de ambiente**
-   Crie um arquivo `.env.local` no diretório raiz:
-   ```env
-   VITE_SUPABASE_URL=sua_url_supabase
-   VITE_SUPABASE_ANON_KEY=sua_chave_anonima_supabase
-   VITE_OPENAI_API_KEY=sua_chave_openai
-   VITE_GEMINI_API_KEY=sua_chave_gemini
-   ```
-
-4. **Configure o Supabase**
-   - Crie um novo projeto Supabase
-   - Execute os arquivos de migração na pasta `supabase/migrations/`
-   - Habilite Row Level Security (RLS) em todas as tabelas
-
-5. **Inicie o servidor de desenvolvimento**
-   ```bash
-   npm run dev
-   ```
-
-6. **Abra seu navegador**
-   Navegue para `http://localhost:3000`
-
-### Build para Produção
+## 🚀 Instalação
 
 ```bash
-npm run build
-npm run preview
+# Clonar
+git clone https://github.com/inotyu/pawmyy.git
+cd pawmyy
+
+# Instalar dependências
+npm install
+
+# Configurar ambiente
+cp .env.example .env.local
+# Editar .env.local com suas credenciais
+
+# Iniciar desenvolvimento
+npm run dev
 ```
 
-## Estrutura do Projeto
+## ⚙️ Configuração
+
+Configure as variáveis em `.env.local`:
+
+```env
+VITE_SUPABASE_URL=sua_url_supabase
+VITE_SUPABASE_ANON_KEY=sua_chave_anonima_supabase
+VITE_OPENAI_API_KEY=sua_chave_openai
+VITE_GEMINI_API_KEY=sua_chave_gemini
+```
+
+## 📁 Estrutura
 
 ```
 src/
-├── components/          # Componentes React
-├── services/           # Integrações de API
-├── types/              # Definições TypeScript
-└── App.tsx            # Componente principal da aplicação
+├── components/    # Componentes React
+├── services/      # Integrações de API
+├── types/         # Definições TypeScript
+└── App.tsx       # Aplicação principal
 ```
 
-## Contribuindo
+## 🤝 Contribuição
 
-Sinta-se à vontade para enviar issues e solicitações de melhorias!
+1. Fork o projeto
+2. Crie branch: `git checkout -b feature/nova-funcionalidade`
+3. Commit: `git commit -m 'Add nova funcionalidade'`
+4. Push: `git push origin feature/nova-funcionalidade`
+5. Pull Request
 
 ---
 
-*Feito com ❤️ para famílias e cuidadores em todo lugar*
-=======
-# pawmyy
->>>>>>> 2fe579fdfad4f97b41927c5af23693974506625e
+**Feito com ❤️ para idosos e seus cuidadores**
